@@ -1,15 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+{% import "bootstrap/wtf.html" as wtf %}
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="/static/app.js"></script>
+  <!-- Site made with Mobirise Website Builder v4.4.1, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.4.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/static/assets/images/logo2.png" type="image/x-icon">
+  <meta name="description" content="New Form Templates - Free Download">
+  <title>Free HTML Bootstrap 4 Form Templates</title>
+  <link rel="stylesheet" href="/static/assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="/static/assets/tether/tether.min.css">
+  <link rel="stylesheet" href="/static/assets/soundcloud-plugin/style.css">
+  <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="/static/assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="/static/assets/shopping-cart/minicart-theme.css">
+  <link rel="stylesheet" href="/static/assets/theme/css/style.css">
+  <link rel="stylesheet" href="/static/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
 </head>
 <body>
+<script>var shopcartSettings = {"shopcart_top_offset":120,"side_offset":20,"site_width":1150,"shopcart_icon_color":"#FFFFFF","shopcart_back_color":"#2969b0","shopcart_icon_size":48,"sc_count_color":"#FFFFFF","sc_count_back_color":"#fc26ae","sc_count_size":12,"checkout_button":"Check Out with"};</script>
+
+<!-- Google Analytics -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFK425"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFK425');</script>
+<!-- /Google Analytics -->
+
+
+<section class="mbr-section form1 cid-qv5ApHdm7c mbr-parallax-background" id="form1-4t" data-rv-view="6091">
+
+    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(239, 239, 239);">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Decrypt</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
+                    Decrypt Your Chipertext to Plaintext Only!
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8" data-form-type="formoid">
+                    <div data-form-alert="" hidden="">
+                        Enc
+                    </div>
+
+                    <form class="mbr-form" action="/decrypt/proc" method="post">
+                        {{ form.csrf_token() }}
+{#                        <div class="row row-sm-offset">#}
+                        <div class="form-group">
+                            {{ form.chipertext.label(class="form-control-label mbr-fonts-style display-7") }}
+{#                            <label for="message-form1-4t">Chipertext</label>#}
+                            {{ form.chipertext( class="form-control" , rows="7", id = "chipertext", onchange="decrypt()") }}
+{#                            <textarea type="text"name="message" data-form-field="chipertext"></textarea>#}
+                        </div>
+                        <div class="row row-xl-offset">
+                            <div class="col-md-4 multi-horizontal">
+                                <div class="form-group">
+                                    {{ form.keyPadding.label(class="form-control-label mbr-fonts-style display-7") }}
+{#                                    <label for="keyPadding">Key Padding</label>#}
+                                    {{ form.keyPadding(class="form-control", rows="7", id="keyPadding", onchange="decrypt()") }}
+{#                                    <input type="text" class="form-control" name="PaddingKey" rows="7" id="keyPadding">#}
+                                </div>
+                            </div>
+                            <div class="col-md-4 multi-horizontal">
+                                <div class="form-group">
+                                    {{ form.key2.label(class="form-control-label mbr-fonts-style display-7") }}
+{#                                    <label class="form-control-label mbr-fonts-style display-7" for="keyPadding">Key 2</label>#}
+                                    {{ form.key2(class="form-control", rows="7", id="key2", onchange="decrypt()") }}
+{#                                    <input type="text" class="form-control" name="key2" rows="7" id="key2">#}
+                                </div>
+                            </div>
+                        </div>
+
+{#                        <span class="input-group-btn">#}
+{#                            {{ form.submit(class="btn btn-primary btn-form display-4") }}#}
+{#                            <button href="" type="submit" class="btn btn-primary btn-form display-4">Encrypt</button>#}
+{#                        </span>#}
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function decrypt() {
+    var chipertext = document.getElementById("chipertext");
+    var keyPadding = document.getElementById("keyPadding");
+    var key2 = document.getElementById("key2");
+
+    $.ajax({
+       type: 'POST',
+       url: '/decrypt/proc',
+       data:{
+           "chipertext":chipertext,
+           "keyPadding": keyPadding,
+           "key2":key2
+       } ,
+        success : function (response) {
+           alert("Hasil" + response);
+            // var text1 = "<span></span>";
+            {#var text1 = document.createElement("span");#}
+            {#text1.innerHTML = response;#}
+            {#$("body").append(text1);#}
+        }
+    });
+}
+</script>
+  <script src="/static/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="/static/assets/popper/popper.min.js"></script>
+  <script src="/static/assets/tether/tether.min.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/static/assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="/static/assets/dropdown/js/script.min.js"></script>
+  <script src="/static/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="/static/assets/parallax/jarallax.min.js"></script>
+  <script src="/static/assets/shopping-cart/minicart.js"></script>
+  <script src="/static/assets/shopping-cart/jquery.easing.min.js"></script>
+  <script src="/static/assets/shopping-cart/minicart-customizer.js"></script>
+  <script src="/static/assets/theme/js/script.js"></script>
+  <script src="/static/assets/formoid/formoid.min.js"></script>
+
 
 </body>
 </html>
