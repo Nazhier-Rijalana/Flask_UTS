@@ -4,6 +4,8 @@ from wtforms import TextAreaField, StringField, IntegerField, SubmitField
 import json
 from flask_bootstrap import Bootstrap
 from wtforms.validators import DataRequired
+from hackercodecs import *
+from itertools import cycle, chain
 
 
 app = Flask(__name__)
@@ -53,40 +55,9 @@ def proccess_caesar(plaintext,padding):
     mentah = []
     for i in range(len(plaintext)):
         if i%2 == 0:
-            if 33 <= ord(plaintext[i]) <= 47:
-                mentah.append(chr((ord(plaintext[i]) + (padding+2)) %33 % 14 + 33))
-            elif 48 <= ord(plaintext[i]) <= 57:
-                mentah.append(chr((ord(plaintext[i])+ (padding+2)) % 48 % 10 + 48))
-            elif 58 <= ord(plaintext[i]) <= 64:
-                mentah.append(chr((ord(plaintext[i])+ (padding+2)) % 58 % 7 + 58))
-            elif 65 <= ord(plaintext[i]) <= 90:
-                mentah.append(chr((ord(plaintext[i]) + (padding+2)) % 65 % 26 + 65))
-            elif 91 <= ord(plaintext[i]) <= 96:
-                mentah.append(chr((ord(plaintext[i]) + (padding+2)) % 91 % 6 + 91))
-            elif 97 <= ord(plaintext[i]) <= 122:
-                mentah.append(chr((ord(plaintext[i])+ (padding+2)) % 97 % 26 + 97))
-            elif 123 <= ord(plaintext[i]) <= 126:
-                mentah.append(chr((ord(plaintext[i]) + (padding+2)) % 123 % 4 + 123))
-            else:
-                mentah.append(plaintext[i])
+            mentah.append(plaintext[i].encode('rot12'))
         else:
-            if 33 <= ord(plaintext[i]) <= 47:
-                mentah.append(chr((ord(plaintext[i]) + (padding+3)) %33 % 14 + 33))
-            elif 48 <= ord(plaintext[i]) <= 57:
-                mentah.append(chr((ord(plaintext[i])+ (padding+3)) % 48 % 10 + 48))
-            elif 58 <= ord(plaintext[i]) <= 64:
-                mentah.append(chr((ord(plaintext[i])+ (padding+3)) % 58 % 7 + 58))
-            elif 65 <= ord(plaintext[i]) <= 90:
-                mentah.append(chr((ord(plaintext[i]) + (padding+3)) % 65 % 26 + 65))
-            elif 91 <= ord(plaintext[i]) <= 96:
-                mentah.append(chr((ord(plaintext[i]) + (padding+3)) % 91 % 6 + 91))
-            elif 97 <= ord(plaintext[i]) <= 122:
-                mentah.append(chr((ord(plaintext[i])+ (padding+3)) % 97 % 26 + 97))
-            elif 123 <= ord(plaintext[i]) <= 126:
-                mentah.append(chr((ord(plaintext[i]) + (padding+3)) % 123 % 4 + 123))
-            else:
-                mentah.append(plaintext[i])
-
+            mentah.append(plaintext[i].encode('rot13'))
     return ''.join(mentah)
 
 def vigenere(mentah,key2):
@@ -105,24 +76,14 @@ def vigenere(mentah,key2):
             ret_plain += code
     return ret_plain
 
-def proccess_rail_fence(plain, rails, offset=0):
-    cipher = ''
-    plain = '#'*offset + plain
-    length = len(plain)
-    fence = [['#']*length for _ in range(rails)]
-    rail = 0
-    for x in range(length):
-        fence[rail][x] = plain[x]
-        if rail >= rails-1:
-            dr = -1
-        elif rail <= 0:
-            dr = 1
-        rail += dr
-    for rail in range(rails):
-        for x in range(length):
-            if fence[rail][x] != '#':
-                cipher += fence[rail][x]
-    return cipher
+def fence_pattern(rails, size):
+    zig_zag = cycle(chain(range(rails), range(rails - 2, 0, -1)))
+    return zip(zig_zag, range(size))
+
+
+def proccess_rail_fence(msg, rails):
+    fence = fence_pattern(rails, len(msg))
+    return ''.join(msg[i] for _, i in sorted(fence))
 
 
 @app.route('/decrypt')
@@ -148,34 +109,11 @@ def decrypt2():
     #     return redirect('/decrypt')
 
 
-def decrypt_rail_fence(cipher, rails, offset=0):
-    plain = ''
-    if offset:
-        t = proccess_rail_fence('o' * offset + 'x' * len(cipher), rails)
-        for i in range(len(t)):
-            if (t[i] == 'o'):
-                cipher = cipher[:i] + '#' + cipher[i:]
-
-    length = len(cipher)
-    fence = [['#'] * length for _ in range(rails)]
-    i = 0
-    for rail in range(rails):
-        p = (rail != (rails - 1))
-        x = rail
-        while (x < length and i < length):
-            fence[rail][x] = cipher[i]
-            if p:
-                x += 2 * (rails - rail - 1)
-            else:
-                x += 2 * rail
-            if (rail != 0) and (rail != (rails - 1)):
-                p = not p
-            i += 1
-    for i in range(length):
-        for rail in range(rails):
-            if fence[rail][i] != '#':
-                plain += fence[rail][i]
-    return plain
+def decrypt_rail_fence(msg, rails):
+    fence = fence_pattern(rails, len(msg))
+    fence_msg = zip(msg, sorted(fence))
+    return ''.join(
+        char for char, _ in sorted(fence_msg, key=lambda item: item[1][1]))
 
 def decrypt_vigenere(plaintext, key2):
     universe = [c for c in (chr(i) for i in range(32,127))]
@@ -198,40 +136,9 @@ def proccess_caesar(plaintext,padding):
     mentah = []
     for i in range(len(plaintext)):
         if i%2 == 0:
-            if 33 <= ord(plaintext[i]) <= 47:
-                mentah.append(chr((ord(plaintext[i]) - (padding+2)) %33 % 14 + 33))
-            elif 48 <= ord(plaintext[i]) <= 57:
-                mentah.append(chr((ord(plaintext[i]) - (padding+2)) % 48 % 10 + 48))
-            elif 58 <= ord(plaintext[i]) <= 64:
-                mentah.append(chr((ord(plaintext[i]) - (padding+2)) % 58 % 7 + 58))
-            elif 65 <= ord(plaintext[i]) <= 90:
-                mentah.append(chr((ord(plaintext[i]) - (padding+2)) % 65 % 26 + 65))
-            elif 91 <= ord(plaintext[i]) <= 96:
-                mentah.append(chr((ord(plaintext[i]) - (padding+2)) % 91 % 6 + 91))
-            elif 97 <= ord(plaintext[i]) <= 122:
-                mentah.append(chr((ord(plaintext[i]) - (padding+2)) % 97 % 26 + 97))
-            elif 123 <= ord(plaintext[i]) <= 126:
-                mentah.append(chr((ord(plaintext[i]) - (padding+2)) % 123 % 4 + 123))
-            else:
-                mentah.append(plaintext[i])
+            mentah.append(plaintext[i].decode('rot12'))
         else:
-            if 33 <= ord(plaintext[i]) <= 47:
-                mentah.append(chr((ord(plaintext[i]) - (padding+3)) %33 % 14 + 33))
-            elif 48 <= ord(plaintext[i]) <= 57:
-                mentah.append(chr((ord(plaintext[i]) - (padding+3)) % 48 % 10 + 48))
-            elif 58 <= ord(plaintext[i]) <= 64:
-                mentah.append(chr((ord(plaintext[i]) - (padding+3)) % 58 % 7 + 58))
-            elif 65 <= ord(plaintext[i]) <= 90:
-                mentah.append(chr((ord(plaintext[i]) - (padding+3)) % 65 % 26 + 65))
-            elif 91 <= ord(plaintext[i]) <= 96:
-                mentah.append(chr((ord(plaintext[i]) - (padding+3)) % 91 % 6 + 91))
-            elif 97 <= ord(plaintext[i]) <= 122:
-                mentah.append(chr((ord(plaintext[i]) - (padding+3)) % 97 % 26 + 97))
-            elif 123 <= ord(plaintext[i]) <= 126:
-                mentah.append(chr((ord(plaintext[i]) + (padding+3)) % 123 % 4 + 123))
-            else:
-                mentah.append(plaintext[i])
-
+            mentah.append(plaintext[i].decode('rot13'))
     return ''.join(mentah)
 
 
