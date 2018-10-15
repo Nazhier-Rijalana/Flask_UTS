@@ -17,48 +17,41 @@ class encryptform(FlaskForm):
     plaintext = TextAreaField("Plaintext", validators=[DataRequired()])
     keyPadding = IntegerField("KeyPadding", validators=[DataRequired()])
     key2 = StringField("Key2", validators=[DataRequired()])
-    # submit = SubmitField("encrypt")
+    submit = SubmitField("encrypt")
 
 class decryptform(FlaskForm):
     chipertext = TextAreaField("chipertext", validators=[DataRequired()])
     keyPadding = IntegerField("keyPadding", validators=[DataRequired()])
     key2 = StringField("key2", validators=[DataRequired()])
-    # submit = SubmitField("decrypt")
+    submit = SubmitField("decrypt")
 
 @app.route('/')
 def home():
     return render_template("index.html")
 
-@app.route('/encrypt')
+@app.route('/encrypt', methods=['GET','POST'])
 def enc():
     form = encryptform()
-    return render_template("encrypt.html", form=form)
-
-@app.route('/encrypt/proc', methods=['POST'])
-def encrypt():
-    form = encryptform()
-    response = ""
-    if request.method == "POST":
+    mateng = ""
+    print "disini12"
+    if request.method == 'POST':
+        print "disini"
         plaintext = form.plaintext.data
         keyPadding = form.keyPadding.data
         key2 = form.key2.data
-        mentah = proccess_caesar(plaintext, keyPadding)
+        mentah = proccess_caesar_encrypt(plaintext)
         setengah = vigenere(mentah,key2)
         mateng = proccess_rail_fence(setengah,keyPadding)
-        response = make_response(json.dumps(mateng))
-        response.content_type = 'application/json'
-    return response
-    # else:
-    #     return redirect('/encrypt')
+    return render_template("encrypt.html", form=form, mateng=mateng)
 
-def proccess_caesar(plaintext,padding):
+def proccess_caesar_encrypt(plaintext):
     mentah = []
     for i in range(len(plaintext)):
         if i%2 == 0:
             mentah.append(plaintext[i].encode('rot12'))
         else:
             mentah.append(plaintext[i].encode('rot13'))
-    return ''.join(mentah)
+    return str(''.join(mentah))
 
 def vigenere(mentah,key2):
     universe = [c for c in (chr(i) for i in range(32,127))]
@@ -76,44 +69,35 @@ def vigenere(mentah,key2):
             ret_plain += code
     return ret_plain
 
-def fence_pattern(rails, size):
-    zig_zag = cycle(chain(range(rails), range(rails - 2, 0, -1)))
-    return zip(zig_zag, range(size))
+def pattern(height, width):
+    n = 2 * (height - 1)
+    positions = (min(x, n - x) for x in cycle(range(n)))
+    return sorted(zip(positions, range(width)))
 
 
-def proccess_rail_fence(msg, rails):
-    fence = fence_pattern(rails, len(msg))
-    return ''.join(msg[i] for _, i in sorted(fence))
+def proccess_rail_fence(xs, height):
+    positions = pattern(height, len(xs))
+    return ''.join(xs[i] for _, i in positions)
 
 
-@app.route('/decrypt')
+@app.route('/decrypt', methods=['GET','POST'])
 def decrypt():
     form = decryptform()
-    return render_template('decrypt.html', form = form)
-
-@app.route('/decrypt/proc', methods=['POST'])
-def decrypt2():
-    form = decryptform()
-    response = ""
+    mateng = ""
     if request.method == "POST":
+        print "disini"
         chipertext = form.chipertext.data
         keyPadding = form.keyPadding.data
         key2 = form.key2.data
-        mentah = decrypt_rail_fence(chipertext, keyPadding)
+        mentah = decrypt_rail_fence(chipertext,keyPadding)
         setengah = decrypt_vigenere(mentah,key2)
-        mateng = proccess_caesar(setengah,keyPadding)
-        response = make_response(json.dumps(mateng))
-        response.content_type = 'application/json'
-    return response
-    # else:
-    #     return redirect('/decrypt')
+        mateng = proccess_caesar(setengah)
+    return render_template('decrypt.html', form = form, mateng=mateng)
 
-
-def decrypt_rail_fence(msg, rails):
-    fence = fence_pattern(rails, len(msg))
-    fence_msg = zip(msg, sorted(fence))
-    return ''.join(
-        char for char, _ in sorted(fence_msg, key=lambda item: item[1][1]))
+def decrypt_rail_fence(xs, height):
+    positions = pattern(height, len(xs))
+    rectified = sorted(enumerate(positions), key=lambda t: t[1][1])
+    return ''.join(xs[i] for i, _ in rectified)
 
 def decrypt_vigenere(plaintext, key2):
     universe = [c for c in (chr(i) for i in range(32,127))]
@@ -132,14 +116,14 @@ def decrypt_vigenere(plaintext, key2):
             ret_plain += code
     return ret_plain
 
-def proccess_caesar(plaintext,padding):
+def proccess_caesar(plaintext):
     mentah = []
     for i in range(len(plaintext)):
         if i%2 == 0:
             mentah.append(plaintext[i].decode('rot12'))
         else:
             mentah.append(plaintext[i].decode('rot13'))
-    return ''.join(mentah)
+    return str(''.join(mentah))
 
 
 if __name__ == '__main__':
