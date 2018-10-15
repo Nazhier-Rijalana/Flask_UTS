@@ -28,7 +28,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="8" />
-          <entry key="html" value="2265" />
+          <entry key="html" value="2425" />
           <entry key="js" value="887" />
           <entry key="py" value="3727" />
           <entry key="txt" value="15" />
@@ -36,7 +36,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2265" />
+          <entry key="HTML" value="2425" />
           <entry key="JavaScript" value="887" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="Python" value="3727" />
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/encrypt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="90" column="22" selection-start-line="90" selection-end-line="91" />
+            <state relative-caret-position="136">
+              <caret line="90" column="138" lean-forward="true" selection-start-line="90" selection-start-column="138" selection-end-line="90" selection-end-column="138" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -112,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/decrypt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="107">
+              <caret line="90" column="138" selection-start-line="90" selection-start-column="138" selection-end-line="90" selection-end-column="138" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -410,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/encrypt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="90" column="22" selection-start-line="90" selection-end-line="91" />
+        <state relative-caret-position="136">
+          <caret line="90" column="138" lean-forward="true" selection-start-line="90" selection-start-column="138" selection-end-line="90" selection-end-column="138" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -421,8 +421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/decrypt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="107">
+          <caret line="90" column="138" selection-start-line="90" selection-start-column="138" selection-end-line="90" selection-end-column="138" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />

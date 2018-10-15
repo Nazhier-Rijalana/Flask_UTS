@@ -88,7 +88,8 @@
                 <br/>
                 <br/>
                 <label class="form-control-label mbr-fonts-style display-8"> Hasil : </label>
-                <input class="form-control" style="background-color: #0cc1b3; color: #ffffff;" type="text" value="{{ mateng }}" disabled>
+                <input id="copas" class="form-control" style="background-color: #0cc1b3; color: #ffffff;" type="text" value="{{ mateng }}">
+                <button onclick="copas()">Copy This</button>
                 <br/>
                 <br/>
                 <br/>
@@ -98,6 +99,15 @@
         </div>
     </div>
 </section>
+<script>
+    function copas()
+    {
+        var value = document.getElementById("copas");
+        value.select();
+        document.execCommand("copy");
+
+    }
+</script>
   <script src="/static/assets/web/assets/jquery/jquery.min.js"></script>
   <script src="/static/assets/popper/popper.min.js"></script>
   <script src="/static/assets/tether/tether.min.js"></script>
