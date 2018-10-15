@@ -10,15 +10,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/static/assets/images/logo2.png" type="image/x-icon">
   <meta name="description" content="New Form Templates - Free Download">
-  <title>Free HTML Bootstrap 4 Form Templates</title>
+  <title>Encrypt Your Plaintext</title>
   <link rel="stylesheet" href="/static/assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="/static/assets/tether/tether.min.css">
-  <link rel="stylesheet" href="/static/assets/soundcloud-plugin/style.css">
+{#  <link rel="stylesheet" href="/static/assets/soundcloud-plugin/style.css">#}
   <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="/static/assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="/static/assets/shopping-cart/minicart-theme.css">
+{#  <link rel="stylesheet" href="/static/assets/shopping-cart/minicart-theme.css">#}
   <link rel="stylesheet" href="/static/assets/theme/css/style.css">
   <link rel="stylesheet" href="/static/assets/mobirise/css/mbr-additional.css" type="text/css">
 
@@ -32,6 +32,10 @@
     <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(239, 239, 239);">
     </div>
     <div class="container">
+        <div class="row justify-content-center">
+            <a class="btn btn-success" href="/"> Want To Back?</a>
+        <a class="btn btn-success" href="{{ url_for('decrypt') }}"> Want To Decrypt?</a>
+        </div>
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
                 <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Encrypt Form</h2>
@@ -47,7 +51,6 @@
                     <div data-form-alert="" hidden="">
                         Enc
                     </div>
-
                     <form class="mbr-form" action="{{ url_for('enc') }}" method="POST">
                         {{ form.csrf_token() }}
 {#                        <div class="row row-sm-offset">#}
@@ -82,7 +85,16 @@
 {#                            <button href="" type="submit" class="btn btn-primary btn-form display-4">Encrypt</button>#}
 {#                        </span>#}
                     </form>
-                <span> Hasil =  {{ mateng }}</span>
+                <br/>
+                <br/>
+                <label class="form-control-label mbr-fonts-style display-8"> Hasil : </label>
+                <input class="form-control" style="background-color: #0b566f" type="text" value="{{ mateng }}" disabled>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+{#                <span> Hasil =  {{ mateng }}</span>#}
             </div>
         </div>
     </div>
@@ -91,13 +103,7 @@
   <script src="/static/assets/popper/popper.min.js"></script>
   <script src="/static/assets/tether/tether.min.js"></script>
   <script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/static/assets/smoothscroll/smooth-scroll.js"></script>
   <script src="/static/assets/dropdown/js/script.min.js"></script>
-  <script src="/static/assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="/static/assets/parallax/jarallax.min.js"></script>
-  <script src="/static/assets/shopping-cart/minicart.js"></script>
-  <script src="/static/assets/shopping-cart/jquery.easing.min.js"></script>
-  <script src="/static/assets/shopping-cart/minicart-customizer.js"></script>
   <script src="/static/assets/theme/js/script.js"></script>
 {#  <script src="/static/assets/formoid/formoid.min.js"></script>#}
 

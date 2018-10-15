@@ -3,8 +3,193 @@
   <component name="ChangeListManager">
     <list default="true" id="b45b5922-2dac-46be-8aa0-ffde863c81b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/1_shop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2017-8-1-11-56-53-950969.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2017-8-1-11-57-15-727423.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2017-8-1-11-57-32-412416.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2017-8-1-11-57-53-750243.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2017-8-1-11-58-17-535209.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2017-8-1-12-4-37-10325.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2017-8-1-12-5-16-29911.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/2_store.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/3_ecommerce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/4_hotel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/5_landing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/6_premium.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/7_profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/8_shopping.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/9_store.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/about-us-page-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/agency-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/andre-thomas-weller-333032-800x1200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/andre-thomas-weller-333032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/anemone-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/application-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/article-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/autumn-goodman-242810-1000x1000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/background1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/background3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/background5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/blog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/brooke-cagle-171800-1000x1000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/brooke-lark-207270-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/brooke-lark-207271-2000x1333-800x533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/brooke-lark-207271-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/business-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/bytafont-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/calculator-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/campbell-boulanger-348382-1333x1666.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/carlos-dominguez-325313-2000x1500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/carlos-dominguez-342207-2000x1333-800x533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/carlos-dominguez-342207-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/carlos-dominguez-342207.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/carousel-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/catarina-carvalho-344974-1000x1000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/chrome-remote-desktop-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/clear-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/clem-onojeghuo-206825-2000x1422.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/coffee-923094-1920-1920x1280-16-1400x933.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/com-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/coming-soon-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/contact-form-template-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/corporate-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/daniel-apodaca-335330-2000x2664.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/documentation-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/education-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/error-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/event-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/face6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/facebook-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/faq-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/footer-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/form-templates.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery00.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/gallery07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/google-maps-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/google-slides-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/grid-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/hannah-busing-307816-2000x3000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/hannah-busing-307816-800x1200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/hannah-busing-307816.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/header-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/homepage-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/hotel-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/imac-605421-1920-1920x1275.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067975-1920-1920x1439-5-1920x1439.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067975-1920-1920x1439-800x599.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067975-1920-1920x1439.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/images/iphone-1067975-1920-1920x1439.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067982-1920-1920x1439-800x599.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067982-1920-1920x1439-90-1920x1439.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067982-1920-1920x1439.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/images/iphone-1067982-1920-1920x1439.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067983-1920-1920x1440-800x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067983-1920-1920x1440.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067991-1920-1920x1440-800x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-1067991-1920-1920x1440.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/images/iphone-1067991-1920-1920x1440.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-6-458150-1920-1920x1285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-6-458151-1920-1920x1285-67-1920x1285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-6-458151-1920-1920x1285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-6-458153-1920-1920x1285.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/iphone-926663-1920-1920x1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/jake-young-168598-800x1200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/jake-young-168598.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/japheth-mast-317769-2000x1333-800x533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/japheth-mast-317769-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/jumbotron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/jumbotron2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/ken-cheung-256045-2000x1333-800x533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/ken-cheung-256045-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/kindle-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/landing-page-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/laura-aziz-78171-2000x1337.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/letizia-bordoni-252913-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/list-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/macbook-926425-1920-1920x1279.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/magazine-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/map-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/maps-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/maranatha-pizarras-342561-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/maranatha-pizarras-342562-2000x1333-800x533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/maranatha-pizarras-342562-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/maria-victoria-heredia-reyes-20883-1000x1000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-1-1626x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-1080x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-1620x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-1624x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-1631x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/images/mbr-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/mbr4th-horizontal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/menu-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/micah-h-13762-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/multi-page-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/navbar-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/navigation-menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/news-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/one-page-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/parallax-scrolling-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/parallax-template-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/parallax-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/personal-website-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/phone-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/photo-gallery-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/photography-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/photos-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/profile-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/real-estate-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/registration-form-template-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/registration-form-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/reminders-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/restaurant-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/samuel-fyfe-235457-2000x1333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/shopping-cart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/slider-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/slider-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/slider.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/social-network-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/store-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/tab-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/table-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/timothy-paul-smith-351366-1333x1999.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/timothy-paul-smith-351366-800x1199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/timothy-paul-smith-351366.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/travel-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/video-bg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/video-bg-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/video-bg-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/video-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/video-gallery-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/video-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/warren-wong-200912-2000x1304.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/web-application-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/wedding-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/workflow-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/youtube-350x350.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/zheng-41190-2000x1333.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/decrypt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/decrypt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/encrypt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/encrypt.html" afterDir="false" />
     </list>
@@ -31,14 +216,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="8" />
-          <entry key="html" value="1857" />
+          <entry key="html" value="2242" />
           <entry key="js" value="887" />
           <entry key="py" value="3727" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1857" />
+          <entry key="HTML" value="2242" />
           <entry key="JavaScript" value="887" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Python" value="3727" />
@@ -69,19 +254,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="101" column="38" lean-forward="true" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+            <state relative-caret-position="1515">
+              <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
               <folding>
                 <element signature="e#0#83#0" expanded="true" />
                 <marker date="1539607827217" expanded="true" signature="771:1016" ph="..." />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/test234.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -96,8 +276,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
+            <state relative-caret-position="165">
+              <caret line="11" column="34" selection-start-line="10" selection-start-column="52" selection-end-line="11" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -105,8 +285,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/encrypt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="68" column="67" lean-forward="true" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+            <state relative-caret-position="167">
+              <caret line="104" column="70" selection-start-line="104" selection-start-column="70" selection-end-line="104" selection-end-column="70" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,17 +298,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/decrypt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="197">
+              <caret line="103" column="70" selection-start-line="103" selection-start-column="70" selection-end-line="103" selection-end-column="70" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,8 +347,8 @@
         <option value="$USER_HOME$/mobirise.com/bootstrap-4-theme/form-templates.html" />
         <option value="$USER_HOME$/Desktop/.test/flask_enc/templates/encrypt.html" />
         <option value="$PROJECT_DIR$/static/app.js" />
-        <option value="$PROJECT_DIR$/templates/encrypt.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/encrypt.html" />
         <option value="$PROJECT_DIR$/templates/decrypt.html" />
       </list>
     </option>
@@ -208,21 +387,6 @@
               <item name="kakom_uts" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kakom_uts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kakom_uts" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kakom_uts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kakom_uts" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kakom_uts" type="b2602c69:ProjectViewProjectNode" />
@@ -375,16 +539,6 @@
         <state relative-caret-position="-2700" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/test234.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/.test/flask_enc/templates/decrypt.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -399,20 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/assets/theme/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18748">
@@ -422,10 +562,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/test234.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="101" column="38" lean-forward="true" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+        <state relative-caret-position="1515">
+          <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
           <folding>
             <element signature="e#0#83#0" expanded="true" />
             <marker date="1539607827217" expanded="true" signature="771:1016" ph="..." />
@@ -433,17 +583,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="10" selection-start-column="52" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/encrypt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="68" column="67" lean-forward="true" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+        <state relative-caret-position="167">
+          <caret line="104" column="70" selection-start-line="104" selection-start-column="70" selection-end-line="104" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/decrypt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
+        <state relative-caret-position="197">
+          <caret line="103" column="70" selection-start-line="103" selection-start-column="70" selection-end-line="103" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
